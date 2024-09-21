@@ -109,12 +109,12 @@
 }  
 .containerServices {
     background: url('../../assets/images/bg3.jpg');
-    background-color: rgb(143, 202, 241);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     display: flex;
     flex-direction: column;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size:auto;
+    min-height: 860px;
     padding: 60px 60px;
     
     @media screen and (min-width: 1440px) {
@@ -122,29 +122,7 @@
       padding: 30px 30px;
     }
     
-    @media screen and (max-width: 1024px) {
-      /* стили для планшета в альбомной ориентации */
-      
-    }
     
-    @media screen and (max-width: 768px) {
-     /* стили для планшета */
-
-    }
-    
-    @media screen and (max-width: 425px) {
-    /* стили для широкого смартфона */
-  
-    }
-    
-    @media screen and (max-width: 375px) {
-     /* стили для среднего смартфона */
-    }
-    
-    @media screen and (max-width: 320px) {
-      /* стили для малого смартфона */
-    
-  }
 }
   
 .why {
@@ -228,11 +206,6 @@
     }
 }}
   
-@media screen and (min-width: 2560px) {
-  /* стили для больших мониторов с разрешением 4K */
-
-}
-
 @media screen and (min-width: 1440px) {
   /* стили для больших настольных компьютеров и ноутбуков */
   margin-left: 60%;
@@ -252,13 +225,6 @@ margin-left: 5px;
 width: 80px;
 }
 
-@media screen and (max-width: 375px) {
- /* стили для среднего смартфона */
-}
-
-@media screen and (max-width: 320px) {
-  /* стили для малого смартфона */
-}
   }
   .textLato900 {
     @include text-styles(36px, 700, $orange-color);
@@ -278,6 +244,7 @@ width: 80px;
   
   .textLato800 {
     @include text-styles(48px, 700, $orange-color);
+    align-items: center;
     @media screen and (min-width: 2560px) {
       font-size: 40px;
     }
@@ -322,6 +289,8 @@ margin:30px;
  padding:20px;
   &__section{
 margin:10px;
+text-align: center;
+
   }
   @media screen and (max-width: 768px) {
       width:640px;
@@ -366,6 +335,7 @@ margin:10px;
   min-height: 150px;
   border: white;
   justify-content: center;
+  text-align: center;
   @media screen and (max-width: 1440px) {
   }
   @media screen and (max-width: 768px) {
